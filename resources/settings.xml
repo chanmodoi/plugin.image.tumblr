@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+  <!-- General -->
+  <category label="32001">
+    <setting id="tumblrIDs" type="text" label="30000" value="['conbano','chanmodoi']"/>
+  </category>
+</settings>
