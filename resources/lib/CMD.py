@@ -24,7 +24,7 @@ def download_list_image(urls, path):
 	xbmc.log ("Waiting...")
 
 	for th in threads:
-		xbmc.log(str(threading.activeCount()))
+		#xbmc.log(str(threading.activeCount()))
 		th.join()
 		
 	xbmc.log("Complete.")		
@@ -32,7 +32,7 @@ def download_list_image(urls, path):
 #Download anh ve thu muc va them vao list	
 def addDirectoryItem_Images(addon_handle, urls, temp_path):	
 	#Tai anh ve foldername
-	foldername=temp_path+datetime.datetime.utcnow().strftime('%Y%m%d%H%M%S%f')+"\\"			
+	foldername=temp_path+datetime.datetime.utcnow().strftime('%Y%m%d%H%M%S%f')+"/"			
 	os.mkdir(foldername)
 	download_list_image(urls, foldername)
 	

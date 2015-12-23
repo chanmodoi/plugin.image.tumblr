@@ -2,6 +2,7 @@
 <settings>
   <!-- General -->
   <category label="32001">
-    <setting id="tumblrIDs" type="text" label="30000" value="['conbano','chanmodoi']"/>
-  </category>
+    <setting id="tumblrIDs" type="text" visible="true"  />
+	<setting label="Add" type="action" action="RunPlugin(plugin://plugin.image.tumblr/?command=addTumblrID)"/>
+  </category>  
 </settings>
